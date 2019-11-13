@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SV0-ZW-ADu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-unipd" translatesAutoresizingMaskIntoConstraints="NO" id="vrL-Ia-bZW" userLabel="Unipd Logo">
+                                <rect key="frame" x="16" y="104" width="382" height="95.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vrL-Ia-bZW" secondAttribute="height" multiplier="4:1" id="NBc-5Z-CTA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBd-YX-ZHP">
+                                <rect key="frame" x="16" y="215.5" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo iOS con Moku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-yH-8tW" userLabel="Title Label">
+                                <rect key="frame" x="16" y="252.5" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9W4-Sq-xcb" customClass="EXTButton">
+                                <rect key="frame" x="16" y="802" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DHU-nE-42X"/>
+                                </constraints>
+                                <state key="normal" title="Procedi"/>
+                                <connections>
+                                    <segue destination="Tpn-Yo-bcW" kind="show" id="Lh0-fo-hj7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vrL-Ia-bZW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="E2z-M9-Qjp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9W4-Sq-xcb" secondAttribute="bottom" constant="16" id="Vih-69-RnR"/>
+                            <constraint firstItem="oEG-yH-8tW" firstAttribute="top" secondItem="oBd-YX-ZHP" secondAttribute="bottom" constant="16" id="eu1-JN-g0B"/>
+                            <constraint firstItem="vrL-Ia-bZW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gQU-lC-fTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oEG-yH-8tW" secondAttribute="trailing" constant="16" id="hKB-L4-wPs"/>
+                            <constraint firstItem="oBd-YX-ZHP" firstAttribute="top" secondItem="vrL-Ia-bZW" secondAttribute="bottom" constant="16" id="iV8-b0-udo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBd-YX-ZHP" secondAttribute="trailing" constant="16" id="kLX-Zs-XVx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9W4-Sq-xcb" secondAttribute="trailing" constant="16" id="mBB-nD-N8T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vrL-Ia-bZW" secondAttribute="trailing" constant="16" id="mUF-vS-mBZ"/>
+                            <constraint firstItem="9W4-Sq-xcb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tAZ-MH-9Ib"/>
+                            <constraint firstItem="oBd-YX-ZHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uKD-5x-ViA"/>
+                            <constraint firstItem="oEG-yH-8tW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wOc-xD-Xze"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="mEp-jA-P2a"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="oBd-YX-ZHP" id="8zX-QS-Xq0"/>
+                        <outlet property="proceedButton" destination="9W4-Sq-xcb" id="leS-MY-WRL"/>
+                        <outlet property="titleLabel" destination="oEG-yH-8tW" id="3xt-EE-zYM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="102"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="EO6-3K-5xc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Result" referencedIdentifier="ResultViewController" id="Tpn-Yo-bcW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bLv-cX-8qe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="och-8Z-umk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c78-Wh-lzl">
+            <objects>
+                <navigationController id="SV0-ZW-ADu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RF0-bU-jUj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wpd-GE-MKC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2pb-LO-yHK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxq-Sm-clc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-unipd" width="330" height="149"/>
+    </resources>
+</document>
