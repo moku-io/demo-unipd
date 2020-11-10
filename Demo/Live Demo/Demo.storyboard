@@ -1,94 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
     </dependencies>
-    <scenes>
-        <!--Demo View Controller-->
-        <scene sceneID="zw0-1n-3f3">
-            <objects>
-                <viewController storyboardIdentifier="DemoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="86A-ba-Tqk" customClass="DemoViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ffH-2D-eoG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H6v-e1-iWy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="207"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="H6v-e1-iWy" secondAttribute="height" multiplier="2:1" id="L77-PE-Wnw"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciao!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-8d-rqx" userLabel="Highlight">
-                                <rect key="frame" x="16" y="267" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHt-kI-DgE" userLabel="Description">
-                                <rect key="frame" x="16" y="303.5" width="382" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwo-eQ-JmV">
-                                <rect key="frame" x="16" y="340" width="382" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVc-4f-W0Y" customClass="EXTButton">
-                                <rect key="frame" x="16" y="802" width="382" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="aLg-zq-Bto"/>
-                                </constraints>
-                                <state key="normal" title="Prenota"/>
-                                <connections>
-                                    <segue destination="nbx-ef-UNS" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="HsG-dn-1PC"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="H6v-e1-iWy" firstAttribute="leading" secondItem="ZlS-wt-IV0" secondAttribute="leading" id="2Ca-hA-fW4"/>
-                            <constraint firstItem="H6v-e1-iWy" firstAttribute="top" secondItem="ZlS-wt-IV0" secondAttribute="top" id="7Mr-dA-LJU"/>
-                            <constraint firstItem="Mwo-eQ-JmV" firstAttribute="top" secondItem="cHt-kI-DgE" secondAttribute="bottom" constant="16" id="CJK-7z-vte"/>
-                            <constraint firstItem="ZlS-wt-IV0" firstAttribute="trailing" secondItem="cHt-kI-DgE" secondAttribute="trailing" constant="16" id="Hxq-Fs-sjm"/>
-                            <constraint firstItem="ZlS-wt-IV0" firstAttribute="trailing" secondItem="Wda-8d-rqx" secondAttribute="trailing" constant="16" id="HzM-xi-l9J"/>
-                            <constraint firstItem="ZlS-wt-IV0" firstAttribute="trailing" secondItem="SVc-4f-W0Y" secondAttribute="trailing" constant="16" id="JIv-4h-rkr"/>
-                            <constraint firstItem="ZlS-wt-IV0" firstAttribute="trailing" secondItem="Mwo-eQ-JmV" secondAttribute="trailing" constant="16" id="MwS-oX-cNe"/>
-                            <constraint firstItem="Mwo-eQ-JmV" firstAttribute="leading" secondItem="ZlS-wt-IV0" secondAttribute="leading" constant="16" id="W7P-VO-rKb"/>
-                            <constraint firstItem="Wda-8d-rqx" firstAttribute="top" secondItem="H6v-e1-iWy" secondAttribute="bottom" constant="16" id="XtW-lz-aip"/>
-                            <constraint firstItem="Wda-8d-rqx" firstAttribute="leading" secondItem="ZlS-wt-IV0" secondAttribute="leading" constant="16" id="Z6Y-cs-OkV"/>
-                            <constraint firstItem="SVc-4f-W0Y" firstAttribute="leading" secondItem="ZlS-wt-IV0" secondAttribute="leading" constant="16" id="fvm-GS-v05"/>
-                            <constraint firstItem="ZlS-wt-IV0" firstAttribute="bottom" secondItem="SVc-4f-W0Y" secondAttribute="bottom" constant="16" id="iOe-h3-1Wc"/>
-                            <constraint firstItem="cHt-kI-DgE" firstAttribute="top" secondItem="Wda-8d-rqx" secondAttribute="bottom" constant="16" id="qCL-Tz-Y1i"/>
-                            <constraint firstItem="ZlS-wt-IV0" firstAttribute="trailing" secondItem="H6v-e1-iWy" secondAttribute="trailing" id="v0l-vO-28e"/>
-                            <constraint firstItem="cHt-kI-DgE" firstAttribute="leading" secondItem="ZlS-wt-IV0" secondAttribute="leading" constant="16" id="yAY-eC-PKf"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ZlS-wt-IV0"/>
-                    </view>
-                    <connections>
-                        <outlet property="descriptionLabel" destination="cHt-kI-DgE" id="Khc-Wf-6Wd"/>
-                        <outlet property="highlight" destination="Wda-8d-rqx" id="xvJ-ZV-QEY"/>
-                        <outlet property="image" destination="H6v-e1-iWy" id="Se5-Vo-TdF"/>
-                        <outlet property="reservationLabel" destination="Mwo-eQ-JmV" id="NC5-A7-LAM"/>
-                        <outlet property="reserveButton" destination="SVc-4f-W0Y" id="88e-DD-tyf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VlA-E1-QmV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-12" y="125"/>
-        </scene>
-        <!--SampleTableViewController-->
-        <scene sceneID="hcA-gm-Np4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SampleTable" referencedIdentifier="SampleTableViewController" id="nbx-ef-UNS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6w8-pQ-htC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="665" y="125"/>
-        </scene>
-    </scenes>
+    <scenes/>
 </document>

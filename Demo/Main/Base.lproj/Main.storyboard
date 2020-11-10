@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SV0-ZW-ADu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SV0-ZW-ADu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,7 +35,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9W4-Sq-xcb" customClass="EXTButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9W4-Sq-xcb" customClass="EXTButton">
                                 <rect key="frame" x="16" y="802" width="382" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="DHU-nE-42X"/>
@@ -44,7 +46,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vrL-Ia-bZW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="E2z-M9-Qjp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9W4-Sq-xcb" secondAttribute="bottom" constant="16" id="Vih-69-RnR"/>
@@ -59,7 +62,6 @@
                             <constraint firstItem="oBd-YX-ZHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uKD-5x-ViA"/>
                             <constraint firstItem="oEG-yH-8tW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wOc-xD-Xze"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="mEp-jA-P2a"/>
                     <connections>
@@ -72,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="102"/>
         </scene>
-        <!--DemoViewController-->
+        <!--ResultViewController-->
         <scene sceneID="HUL-H6-xD5">
             <objects>
-                <viewControllerPlaceholder storyboardName="Demo" referencedIdentifier="DemoViewController" id="bOk-SI-DcE" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Result" referencedIdentifier="ResultViewController" id="bOk-SI-DcE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lKS-bl-QXt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gK-mD-YQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,7 +104,15 @@
             <point key="canvasLocation" x="-670" y="102"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="9W4-Sq-xcb">
+            <size key="intrinsicContentSize" width="53" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="logo-unipd" width="330" height="149"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
